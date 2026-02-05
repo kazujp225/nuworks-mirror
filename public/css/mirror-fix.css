@@ -1,6 +1,6 @@
-/* Mirror site fix - Minimal overrides to allow animations */
+/* Mirror site fix - Minimal overrides */
 
-/* Hide loader only */
+/* Hide loader */
 #loader, .loader-bg {
   display: none !important;
   opacity: 0 !important;
@@ -19,7 +19,7 @@ body.over-hidden {
   overflow: visible !important;
 }
 
-/* Smooth wrapper - allow normal scroll if ScrollSmoother fails */
+/* Smooth wrapper */
 #smooth-wrapper,
 #smooth-content {
   height: auto !important;
@@ -32,12 +32,12 @@ body.over-hidden {
   transform: translateY(0) !important;
 }
 
-/* Main visual - ensure visible */
+/* Main visual text visible */
 .loaded #mv .mv-h1 span {
   opacity: 1 !important;
 }
 
-/* Cursor - always on top */
+/* Cursor */
 .cursor, .follower {
   display: block !important;
   opacity: 1 !important;
@@ -63,38 +63,13 @@ body.over-hidden {
   mix-blend-mode: difference !important;
 }
 
-/* Scroll bar indicator - visible */
+/* Scroll bar indicator */
 .body__scroll__box {
   display: block !important;
   opacity: 1 !important;
 }
 
-/* Ensure sections are visible */
-main {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-/* Introduction section */
-#introduction {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-#introduction .intro-txt {
-  opacity: 1 !important;
-}
-
-/* Marker text - ensure background visible */
-.marker-lead.active span.js-motionTxtBg .b {
-  transform: scale(1, 1) !important;
-}
-
-/* Service section */
-#service {
-  opacity: 1 !important;
-}
-
+/* Service section layout fix */
 #service .title-area {
   display: flex !important;
   flex-direction: row !important;
@@ -104,25 +79,9 @@ main {
 #service .title-area a {
   display: block !important;
   width: calc(560/1400*100vw) !important;
-  flex-flow: row !important;
 }
 
-/* About section */
-#about {
-  opacity: 1 !important;
-}
-
-#about .message-wrap h2 {
-  opacity: 1 !important;
-}
-
-/* Fade up elements - show after animation triggers */
-.js-fadeUp.on {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-/* Mobile fixes */
+/* Mobile */
 @media (max-width: 767px) {
   #smooth-wrapper,
   #smooth-content {
