@@ -1,0 +1,349 @@
+/* Mirror site fix - Force all content visible */
+
+/* Hide loader */
+#loader, .loader-bg {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  z-index: -9999 !important;
+}
+
+/* Body settings */
+body {
+  overflow: visible !important;
+  overflow-x: hidden !important;
+}
+
+body.loaded #header,
+#header {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  z-index: 100 !important;
+}
+
+/* Main visual */
+#mv .container .mv-h1 span,
+#mv .mv-h1 span,
+.mv-h1 span {
+  opacity: 1 !important;
+}
+
+/* Reset transforms to final animated state */
+#mv .container .mv-h1 .h1txt01 {
+  transform: translateX(0) !important;
+}
+
+#mv .container .mv-h1 .h1txt02 {
+  transform: translateX(0) !important;
+  margin-left: 0 !important;
+}
+
+.smoothTextTrigger {
+  transform: translate3d(0, 0, 0) skewY(0) !important;
+  opacity: 1 !important;
+}
+
+/* Introduction section */
+#introduction {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#introduction .intro-txt {
+  opacity: 1 !important;
+}
+
+#introduction p.lead,
+#introduction p.lead span,
+#introduction .lead span {
+  opacity: 1 !important;
+  color: #0F0F0F !important;
+}
+
+.js-shuffleText {
+  opacity: 1 !important;
+}
+
+.marker-lead,
+.marker-lead span,
+.js-motionTxt-wrap,
+.js-motionTxt,
+.js-motionTxtBg {
+  opacity: 1 !important;
+}
+
+#introduction .marker-lead span.js-motionTxt {
+  color: #FFF !important;
+  z-index: 2 !important;
+  position: relative !important;
+}
+
+/* Force marker text characters to be visible */
+#introduction .marker-lead span.js-motionTxt .t,
+#introduction .marker-lead.active span.js-motionTxt .t,
+.marker-lead span.js-motionTxt .t {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+#introduction .marker-lead span.js-motionTxtBg .b,
+#introduction .marker-lead span.js-motionTxtBg,
+.marker-lead span.js-motionTxtBg .b {
+  background: #0F0F0F !important;
+  transform: scale(1, 1) !important;
+  opacity: 1 !important;
+}
+
+/* Introduction section positioning */
+#introduction {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+#introduction .intro-txt {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+#introduction .marker-lead {
+  position: relative !important;
+  z-index: 10 !important;
+  display: block !important;
+}
+
+/* Fade up elements */
+.js-fadeUp,
+.js-pinfadeUp {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+/* Service section */
+#service {
+  background-color: #0F0F0F !important;
+  opacity: 1 !important;
+}
+
+#service .container,
+#service .title-area,
+#service .section__title,
+#service h2,
+#service h3,
+#service p,
+#service span,
+#service .lead,
+#service .lead span,
+#service_header,
+#service_container,
+#service_footer {
+  opacity: 1 !important;
+  color: #FFF !important;
+}
+
+.service-index-wrap {
+  opacity: 1 !important;
+}
+
+.service-item {
+  opacity: 1 !important;
+}
+
+.service-item a {
+  opacity: 1 !important;
+}
+
+.service-item-txt,
+.service-item-img {
+  opacity: 1 !important;
+}
+
+/* About section */
+#about {
+  opacity: 1 !important;
+}
+
+#about .message-wrap,
+#about .message-wrap h2 {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#about.show .message-wrap h2,
+#about .message-wrap h2 {
+  opacity: 1 !important;
+}
+
+#about .message01,
+#about .message01.pccut,
+#about .message01.spcut {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+}
+
+#about .message01 .TextTyping,
+#about .message01 .TextTyping span,
+#about .message01 span.TextTyping span {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1) !important;
+}
+
+.TextTyping span {
+  display: inline-block !important;
+  transform: scale(1) !important;
+  width: auto !important;
+  opacity: 1 !important;
+}
+
+.TextTyping::after {
+  display: none !important;
+}
+
+.js_typing {
+  opacity: 1 !important;
+}
+
+/* About section title */
+#about .s-tit,
+#about .s-tit h2,
+#about .s-tit h2.u_bar,
+#about .s-tit h2.u_bar span {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Company section */
+#company {
+  opacity: 1 !important;
+}
+
+#company .container,
+#company .title-area,
+#company .section__title {
+  opacity: 1 !important;
+}
+
+/* Recruit section */
+#recruit {
+  opacity: 1 !important;
+}
+
+#recruit .container,
+#recruit .title-area,
+#recruit .section__title {
+  opacity: 1 !important;
+}
+
+/* News section */
+#news {
+  background-color: #0F0F0F !important;
+  opacity: 1 !important;
+}
+
+#news .news-left,
+#news .news-right,
+#news .title-area,
+#news .section__title,
+#news .news-inner {
+  opacity: 1 !important;
+}
+
+/* Footer */
+#footer {
+  opacity: 1 !important;
+}
+
+#footer .container {
+  opacity: 1 !important;
+}
+
+/* Scroll bar - hide */
+.body__scroll__box {
+  display: none !important;
+}
+
+/* Cursor - show and ensure visibility */
+.cursor, .follower {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 9999 !important;
+}
+
+/* Hover stalker images */
+.hover-stalker-company,
+.hover-stalker-recruit {
+  opacity: 0.5 !important;
+  visibility: visible !important;
+  position: relative !important;
+  transform: translateX(0) !important;
+}
+
+/* Smooth wrapper fix */
+#smooth-wrapper,
+#smooth-content {
+  height: auto !important;
+  overflow: visible !important;
+  transform: none !important;
+}
+
+main {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+main > .section,
+main > section {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Fix scroll issues */
+body, html {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  height: auto !important;
+}
+
+#mv {
+  position: relative !important;
+  height: auto !important;
+  min-height: 100vh !important;
+}
+
+#mv .container {
+  position: relative !important;
+  height: 100vh !important;
+}
+
+.bg-fade {
+  position: fixed !important;
+  z-index: -1 !important;
+}
+
+body::before {
+  position: fixed !important;
+  z-index: -2 !important;
+}
+
+#smooth-wrapper {
+  position: relative !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+#smooth-content {
+  position: relative !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.loader-bg, #loader {
+  display: none !important;
+  position: absolute !important;
+  z-index: -9999 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
