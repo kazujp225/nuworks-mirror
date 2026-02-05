@@ -268,7 +268,25 @@ body.loaded #header,
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
-  z-index: 9999 !important;
+  z-index: 99999 !important;
+  pointer-events: none !important;
+  position: fixed !important;
+}
+
+.cursor {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #fff !important;
+  border-radius: 50% !important;
+  mix-blend-mode: difference !important;
+}
+
+.follower {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: rgba(255, 255, 255, 0.999) !important;
+  border-radius: 50% !important;
+  mix-blend-mode: difference !important;
 }
 
 /* Hover stalker images */
