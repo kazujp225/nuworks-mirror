@@ -1,5 +1,4 @@
 //gsap
-var winwidth = window.innerWidth;
 window.addEventListener("load",function(){
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText, ScrollToPlugin);
 
