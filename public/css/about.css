@@ -1,0 +1,588 @@
+@charset "UTF-8";
+/*--------------------
+　common
+---------------------*/
+.about-section {
+  padding-top: calc(200/1440*100vw);
+  padding-bottom: calc(100/1440*100vw);
+}
+@media (max-width: 767px) {
+  .about-section {
+    padding-top: calc(200/767*100vw);
+    padding-bottom: calc(100/767*100vw);
+  }
+}
+.about-section .container .tit-box {
+  margin: 0 auto;
+}
+.about-section .container .tit-box h5 span {
+  font-size: calc(48/1440*100vw);
+  font-weight: 400;
+  color: #888888;
+  line-height: 1.75;
+}
+@media (max-width: 767px) {
+  .about-section .container .tit-box h5 span {
+    font-size: calc(40/767*100vw);
+  }
+}
+.about-section .container .tit-box h3 {
+  margin-top: 0;
+  color: #FFF;
+  line-height: 1;
+}
+.about-section .container .tit-box h3 span {
+  font-weight: 600;
+  font-size: calc(24/1440*100vw);
+}
+@media (max-width: 767px) {
+  .about-section .container .tit-box h3 span {
+    font-size: calc(40/767*100vw);
+  }
+}
+.about-section .container .txt-box p {
+  letter-spacing: 0.03em;
+  font-size: calc(40/1440*100vw);
+}
+@media (min-width: 1440px) {
+  .about-section .container .txt-box p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .about-section .container .txt-box p {
+    letter-spacing: 0;
+    font-size: calc(40/767*100vw);
+  }
+}
+.about-section .container .txt-box p > span {
+  display: block;
+  line-height: 2.27;
+}
+.about-section .container .txt-box p + p {
+  margin-top: 2em;
+}
+
+/*--------------------
+　introduction
+---------------------*/
+#introduction {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 0;
+  padding-bottom: calc(160/1440*100vw);
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  #introduction {
+    min-height: 65vh;
+    padding-bottom: calc(200/1024*100vw);
+  }
+}
+@media (max-width: 767px) {
+  #introduction {
+    min-height: 0;
+    padding-bottom: calc(120/167*100vw);
+  }
+}
+#introduction p.lead {
+  font-size: 2.5vw;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 767px) {
+  #introduction p.lead {
+    font-size: 5.2vw;
+  }
+}
+#introduction p.lead span {
+  color: #444444;
+  display: block;
+}
+@media (max-width: 599px) {
+  #introduction p.lead span {
+    color: #999999;
+  }
+}
+#introduction .js-shuffleText2, #introduction .js-shuffleText3, #introduction .js-shuffleText4, #introduction .js-shuffleText5, #introduction .js-shuffleText6, #introduction .js-shuffleText7, #introduction .js-shuffleText8, #introduction .js-shuffleText9, #introduction .js-shuffleText10, #introduction .js-shuffleText11 {
+  opacity: 0;
+}
+#introduction *.is-show {
+  opacity: 1 !important;
+}
+#introduction .marker-lead {
+  font-size: 2.5vw;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  margin-top: 0.5em;
+  position: relative;
+}
+@media (max-width: 767px) {
+  #introduction .marker-lead {
+    font-size: 5.2vw;
+  }
+}
+#introduction .marker-lead span.js-motionTxt {
+  color: #FFFFFF;
+  z-index: 2;
+  position: relative;
+}
+#introduction .marker-lead span.js-motionTxt .t {
+  position: relative;
+  opacity: 0;
+}
+#introduction .marker-lead span.js-motionTxtBg {
+  color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+#introduction .marker-lead span.js-motionTxtBg .b {
+  background: #0F0F0F;
+  transform: scale(0, 1);
+  border-radius: 5px;
+}
+#introduction p.marker-lead {
+  margin-top: 2em;
+}
+#introduction .marker-lead.active span.js-motionTxt .t {
+  animation: Typing .3s ease-in forwards;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(1) {
+  animation-delay: 0.1s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(2) {
+  animation-delay: 0.12s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(3) {
+  animation-delay: 0.14s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(4) {
+  animation-delay: 0.16s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(5) {
+  animation-delay: 0.18s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(6) {
+  animation-delay: 0.2s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(7) {
+  animation-delay: 0.22s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(8) {
+  animation-delay: 0.24s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(9) {
+  animation-delay: 0.26s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(10) {
+  animation-delay: 0.28s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(11) {
+  animation-delay: 0.3s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(12) {
+  animation-delay: 0.32s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(13) {
+  animation-delay: 0.34s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(14) {
+  animation-delay: 0.36s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(15) {
+  animation-delay: 0.38s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(16) {
+  animation-delay: 0.4s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(17) {
+  animation-delay: 0.42s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(18) {
+  animation-delay: 0.44s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(19) {
+  animation-delay: 0.46s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(20) {
+  animation-delay: 0.48s;
+}
+#introduction .marker-lead.active span.js-motionTxt .t:nth-child(21) {
+  animation-delay: 0.5s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b {
+  animation: TypingBG .2s ease-in forwards;
+  transform-origin: left;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(1) {
+  animation-delay: 0.1s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(2) {
+  animation-delay: 0.12s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(3) {
+  animation-delay: 0.14s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(4) {
+  animation-delay: 0.16s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(5) {
+  animation-delay: 0.18s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(6) {
+  animation-delay: 0.2s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(7) {
+  animation-delay: 0.22s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(8) {
+  animation-delay: 0.24s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(9) {
+  animation-delay: 0.26s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(10) {
+  animation-delay: 0.28s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(11) {
+  animation-delay: 0.3s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(12) {
+  animation-delay: 0.32s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(13) {
+  animation-delay: 0.34s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(14) {
+  animation-delay: 0.36s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(15) {
+  animation-delay: 0.38s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(16) {
+  animation-delay: 0.4s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(17) {
+  animation-delay: 0.42s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(18) {
+  animation-delay: 0.44s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(19) {
+  animation-delay: 0.46s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(20) {
+  animation-delay: 0.48s;
+}
+#introduction .marker-lead.active span.js-motionTxtBg .b:nth-child(21) {
+  animation-delay: 0.5s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t {
+  animation: Typing .3s ease-in forwards;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(1) {
+  animation-delay: 0.26s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(2) {
+  animation-delay: 0.28s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(3) {
+  animation-delay: 0.3s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(4) {
+  animation-delay: 0.32s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(5) {
+  animation-delay: 0.34s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(6) {
+  animation-delay: 0.36s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(7) {
+  animation-delay: 0.38s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(8) {
+  animation-delay: 0.4s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(9) {
+  animation-delay: 0.42s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(10) {
+  animation-delay: 0.44s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxt .t:nth-child(11) {
+  animation-delay: 0.46s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b {
+  animation: TypingBG .2s ease-in forwards;
+  transform-origin: left;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(1) {
+  animation-delay: 0.26s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(2) {
+  animation-delay: 0.28s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(3) {
+  animation-delay: 0.3s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(4) {
+  animation-delay: 0.32s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(5) {
+  animation-delay: 0.34s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(6) {
+  animation-delay: 0.36s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(7) {
+  animation-delay: 0.38s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(8) {
+  animation-delay: 0.4s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(9) {
+  animation-delay: 0.42s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(10) {
+  animation-delay: 0.44s;
+}
+#introduction .marker-lead.delay3.active span.js-motionTxtBg .b:nth-child(11) {
+  animation-delay: 0.46s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxt .t {
+  animation: Typing .3s ease-in forwards;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxt .t:nth-child(1) {
+  animation-delay: 0.48s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxt .t:nth-child(2) {
+  animation-delay: 0.5s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxt .t:nth-child(3) {
+  animation-delay: 0.52s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxt .t:nth-child(4) {
+  animation-delay: 0.54s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxt .t:nth-child(5) {
+  animation-delay: 0.56s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxt .t:nth-child(6) {
+  animation-delay: 0.58s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxtBg .b {
+  animation: TypingBG .2s ease-in forwards;
+  transform-origin: left;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxtBg .b:nth-child(1) {
+  animation-delay: 0.48s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxtBg .b:nth-child(2) {
+  animation-delay: 0.5s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxtBg .b:nth-child(3) {
+  animation-delay: 0.52s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxtBg .b:nth-child(4) {
+  animation-delay: 0.54s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxtBg .b:nth-child(5) {
+  animation-delay: 0.56s;
+}
+#introduction .marker-lead.delay8.active span.js-motionTxtBg .b:nth-child(6) {
+  animation-delay: 0.58s;
+}
+#introduction .message-wrap {
+  margin-top: calc(160/1440*100vw);
+}
+@media (max-width: 1024px) {
+  #introduction .message-wrap {
+    margin-top: calc(160/1024*100vw);
+  }
+}
+@media (max-width: 767px) {
+  #introduction .message-wrap {
+    margin-top: calc(160/767*100vw);
+  }
+}
+#introduction .message-wrap h2 {
+  text-align: center;
+}
+#introduction .message-wrap h2 span {
+  font-size: calc(93/1440*100vw);
+  font-weight: 600;
+}
+@media (min-width: 1440px) {
+  #introduction .message-wrap h2 span {
+    font-size: 93px;
+  }
+}
+@media (max-width: 767px) {
+  #introduction .message-wrap h2 span {
+    font-size: calc(98/767*100vw);
+  }
+}
+#introduction .message-wrap h2 span.TextTyping {
+  display: block;
+  text-align: left;
+}
+#introduction .message-wrap.on span.TextTyping span {
+  animation: Typing2 .1s ease-in forwards;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(1) {
+  animation-delay: 0.12s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(2) {
+  animation-delay: 0.14s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(3) {
+  animation-delay: 0.16s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(4) {
+  animation-delay: 0.18s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(5) {
+  animation-delay: 0.2s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(6) {
+  animation-delay: 0.22s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(7) {
+  animation-delay: 0.24s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(8) {
+  animation-delay: 0.26s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(9) {
+  animation-delay: 0.28s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(10) {
+  animation-delay: 0.3s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(11) {
+  animation-delay: 0.32s;
+}
+#introduction .message-wrap.on span.TextTyping span:nth-child(12) {
+  animation-delay: 0.34s;
+}
+
+@keyframes Typing {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes TypingBG {
+  0% {
+    transform: scale(0, 1);
+    opacity: 0;
+    border-radius: 5px;
+  }
+  90% {
+    transform: scale(1.7, 1.5);
+    opacity: 1;
+    border-radius: 30px;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+    border-radius: 0;
+  }
+}
+/*--------------------
+　about01
+---------------------*/
+#about01 .message-wrap {
+  margin-top: calc(110/1440*100vw);
+}
+#about01 .message-wrap h2 {
+  text-align: left;
+}
+#about01 .message-wrap h2 > .TextTyping {
+  display: block;
+}
+#about01 .message-wrap h2 span {
+  font-size: calc(86/1440*100vw);
+  font-weight: 600;
+  color: #FFF;
+}
+@media (min-width: 1440px) {
+  #about01 .message-wrap h2 span {
+    font-size: 86px;
+  }
+}
+@media (max-width: 767px) {
+#about01.bg_gley::before {
+        opacity:0.8;
+    }
+  #about01 .message-wrap h2 span {
+    font-size: calc(60/767*100vw);
+  }
+}
+#about01 .message-wrap h2 span.TextTyping.on span {
+  animation: Typing2 .1s ease-in forwards;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(1) {
+  animation-delay: 0.12s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(2) {
+  animation-delay: 0.14s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(3) {
+  animation-delay: 0.16s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(4) {
+  animation-delay: 0.18s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(5) {
+  animation-delay: 0.2s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(6) {
+  animation-delay: 0.22s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(7) {
+  animation-delay: 0.24s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(8) {
+  animation-delay: 0.26s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(9) {
+  animation-delay: 0.28s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(10) {
+  animation-delay: 0.3s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(11) {
+  animation-delay: 0.32s;
+}
+#about01 .message-wrap h2 span.TextTyping.on span:nth-child(12) {
+  animation-delay: 0.34s;
+}
+#about01 .txt-box {
+  margin-top: calc(100/1440*100vw);
+}
+#about01 .txt-box p {
+  font-weight: 600;
+  color: #151515;
+}
+@media (max-width: 1024px) {
+  #about01 .txt-box p {
+    color: #CCCCCC;
+  }
+}
+@media (max-width: 767px) {
+  #about01 .txt-box p {
+    font-size: calc(32/767*100vw);
+  }
+}
