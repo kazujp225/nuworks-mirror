@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Screenshots
-*.png
+# Screenshots (in root public folder only)
+/public/mirror_*.png
+/public/original_*.png
