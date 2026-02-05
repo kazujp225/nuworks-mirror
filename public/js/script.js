@@ -332,7 +332,7 @@ function shuffleShowScroll() {
       });
       entry.target.classList.add('is-show');
       //一度交差したら監視をやめる
-//      observerStop.unobserve(entry.target);
+      observerStop.unobserve(entry.target);
     });
   }
   // 監視範囲

@@ -63,9 +63,10 @@ body.over-hidden {
   mix-blend-mode: difference !important;
 }
 
-/* Hide scroll bar indicator */
+/* Scroll bar indicator - visible */
 .body__scroll__box {
-  display: none !important;
+  display: block !important;
+  opacity: 1 !important;
 }
 
 /* Ensure sections are visible */
@@ -92,6 +93,18 @@ main {
 /* Service section */
 #service {
   opacity: 1 !important;
+}
+
+#service .title-area {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+}
+
+#service .title-area a {
+  display: block !important;
+  width: calc(560/1400*100vw) !important;
+  flex-flow: row !important;
 }
 
 /* About section */
